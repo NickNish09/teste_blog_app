@@ -12,7 +12,10 @@ class ArticlesController < ApplicationController
   	if @article.save
   		flash[:success] = "Article has been created"
   		redirect_to articles_path
-  	end
+  	else
+      flash[:danger] = "Article has not been created"
+      render :new
+    end
   end
 
   private
