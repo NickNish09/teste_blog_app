@@ -33,6 +33,7 @@ gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'devise'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.4', '>= 3.4.2'
