@@ -8,12 +8,21 @@
       <li class="nav-item">
         <%= link_to "Authors", "#",class: 'nav-link' %>
       </li>
-      <li class="nav-item">
+      <% if user_signed_in? %>
+        <p class="navbar-text">
+         Signed in as <%= "#{current_user.email}" %>
+        </p>
+        <li >
+          <%= link_to "Signout", destroy_user_session_path ,method: :delete,class: 'nav-link' %>
+        </li>
+      <% else %>
+        <li class="nav-item">
         <%= link_to "Sign up", new_user_registration_path ,class: 'nav-link' %>
-      </li>
-      <li >
-        <%= link_to "Signout", destroy_user_session_path ,method: :delete,class: 'nav-link' %>
-      </li>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Sign in", new_user_session_path ,class: 'nav-link' %>
+        </li>
+      <% end %>
     </ul>
   </div>
 </nav>
