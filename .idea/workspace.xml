@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44571bfe-f17f-429e-8abc-2e3d62f16479" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/spec/features/adding_comments_spec.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/spec/requests/comments_spec.rb" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/articles_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/articles_controller.rb" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/articles_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/articles_helper.rb" />
-      <change beforePath="$PROJECT_DIR$/app/models/article.rb" afterPath="$PROJECT_DIR$/app/models/article.rb" />
-      <change beforePath="$PROJECT_DIR$/app/views/articles/show.html.erb" afterPath="$PROJECT_DIR$/app/views/articles/show.html.erb" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/comments_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -51,8 +46,8 @@
       <file leaf-file-name="comments_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            <state relative-caret-position="286">
+              <caret line="13" column="2" lean-forward="false" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -78,11 +73,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="articles_controller.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="articles_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/articles_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="440">
               <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="articles_spec.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/requests/articles_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-308">
+              <caret line="7" column="5" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comments_spec.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/requests/comments_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="469">
+              <caret line="32" column="41" lean-forward="false" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -115,11 +130,12 @@
         <option value="$PROJECT_DIR$/app/models/comment.rb" />
         <option value="$PROJECT_DIR$/app/models/article.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
         <option value="$PROJECT_DIR$/spec/features/adding_comments_spec.rb" />
         <option value="$PROJECT_DIR$/app/views/articles/show.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/articles_helper.rb" />
         <option value="$PROJECT_DIR$/app/controllers/articles_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
+        <option value="$PROJECT_DIR$/spec/requests/comments_spec.rb" />
       </list>
     </option>
   </component>
@@ -168,8 +184,13 @@
             <path>
               <item name="blog_app" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog_app" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="helpers" type="462c0819:PsiDirectoryNode" />
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog_app" type="462c0819:PsiDirectoryNode" />
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
+              <item name="requests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -311,12 +332,12 @@
       <updated>1522845326075</updated>
       <workItem from="1522845328768" duration="51000" />
       <workItem from="1522887307649" duration="91000" />
-      <workItem from="1522944289950" duration="8094000" />
+      <workItem from="1522944289950" duration="8891000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8236000" />
+    <option name="totallyTimeSpent" value="9033000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="91" y="-8" width="1831" height="1086" extended-state="6" />
@@ -463,14 +484,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/requests/articles_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="69" column="4" lean-forward="true" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/articles/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -535,18 +548,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/articles/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
           <caret line="68" column="10" lean-forward="false" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="2" lean-forward="false" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -563,6 +576,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/requests/articles_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-308">
+          <caret line="7" column="5" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/requests/comments_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="32" column="41" lean-forward="false" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
           <folding />
         </state>
       </provider>
